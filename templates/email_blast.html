@@ -28,7 +28,8 @@
 		}
 
 		p {
-			margin-bottom: 1em;
+			margin: .1em auto;
+      line-height: normal;
 		}
 
 		h1.site-title {
@@ -119,12 +120,12 @@
 								<tr>
 									<td style="background:url('header-bg.png');background-repeat:repeat-x;background-color:#e2e2a6;padding-top:8px;padding-right:20px;padding-bottom:20px;padding-left:20px;text-align:left;"
 										bgcolor="#e2e2a6">
-										<table cellpadding="0" cellspacing="0" border="0">
+										<table cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
 											<tr>
 												{% if settings.site.has_meta_image? %}
-												<td style="background-repeat:no-repeat;"
+												<td style="background-repeat:no-repeat; text-align: center;"
 													height="103" width="202" class="logo"><a
-														href="{{ settings.site.full_url }}" style="display: block; width: 50%; margin: 0 auto;"><img
+														href="{{ settings.site.full_url }}"><img
 															src="{{ settings.site.meta_image_url }}"
 															alt="{{ settings.official_name }}" width="350" height="auto"
 															border="0" style="height:auto;" /></a></td>
